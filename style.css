@@ -1,0 +1,224 @@
+:root{
+    --dark-color: black;
+    --light-color:white;
+    --golden-color:rgb(255, 187, 0);
+    --lightdark-color:rgb(43, 40, 40);
+    --purple-color:rgb(140, 0, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--dark-color);
+}
+
+
+header .cosmo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+header .cosmo #cosmo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .cosmo #purple {
+    width: 800px;
+    position: absolute;
+    margin-left: -80%;
+    top: 80px;
+    height: 500px;
+    opacity: 0.8;
+
+}
+header .cosmo p {
+    position: absolute;
+}
+header .cosmo #welcom{
+    font-family: 'Lora', serif;
+    color: var(--light-color);
+    font-size: 30px;
+    top: 180px;
+    margin-left: 370px;
+}
+header .cosmo #intro{
+    color: var(--golden-color);
+    text-align: center;
+    font-size: 25px;
+    top: 300px;
+    margin: 0px 350px;
+    font-family: 'Lora', serif;
+}
+
+section .solar-system{
+    padding: 10px 0px ;
+    height: 400px;
+    background-color: var(--dark-color);
+}
+section .solar-system #welsol{
+    color: var(--light-color);
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 900px;
+    margin-left: 45%;
+    margin-right: 30px;
+}
+section .solar-system #solsys{
+    height: 400px;
+}
+
+
+nav {
+    background-color: var(--lightdark-color);
+    color: var(--light-color);
+    padding-top: 30px;
+}
+nav .planets #acquaintance{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: 0px 150px;
+    border: 1px solid black;
+    margin-bottom: 70px;
+}
+
+
+nav .planets .stars img{
+    width: 300px;
+    height: 288px;
+    border-radius: 10%;
+}
+nav .planets .stars h3{
+    color: var(--golden-color);
+}
+
+
+nav .planets .stars .one {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav .planets .stars .two {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav .planets .stars .three {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+
+nav .planets .stars .one .planet-content {
+    position: relative;
+}
+nav .planets .stars .one .text-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10%;
+}
+nav .planets .stars .one .mer:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .one .ven:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .one .earth:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .one p {
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+
+nav .planets .stars .two .planet-content {
+    position: relative;
+}
+nav .planets .stars .two .text-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10%;
+}
+nav .planets .stars .two .mars:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .two .yup:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .two .sat:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .two p {
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+
+
+nav .planets .stars .three .planet-content {
+    position: relative;
+}
+nav .planets .stars .three .text-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10%;
+}
+nav .planets .stars .three .uran:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .three .nep:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid var(--golden-color);
+}
+nav .planets .stars .three p {
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
