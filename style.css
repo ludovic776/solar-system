@@ -71,12 +71,13 @@ section .solar-system #solsys{
 }
 
 
-nav {
+main {
     background-color: var(--lightdark-color);
     color: var(--light-color);
     padding-top: 30px;
+    padding-bottom: 70px;
 }
-nav .planets #acquaintance{
+main .planets #acquaintance{
     font-size: 20px;
     text-align: center;
     padding: 30px;
@@ -87,31 +88,31 @@ nav .planets #acquaintance{
 }
 
 
-nav .planets .stars img{
+main .planets .stars img{
     width: 300px;
     height: 288px;
     border-radius: 10%;
 }
-nav .planets .stars h3{
+main .planets .stars h3{
     color: var(--golden-color);
 }
 
 
-nav .planets .stars .one {
+main .planets .stars .one {
     display: flex;
     flex-direction:row;
     justify-content: space-around;
     text-align: center;
     margin-bottom: 20px;
 }
-nav .planets .stars .two {
+main .planets .stars .two {
     display: flex;
     flex-direction:row;
     justify-content: space-around;
     text-align: center;
     margin-bottom: 20px;
 }
-nav .planets .stars .three {
+main .planets .stars .three {
     display: flex;
     flex-direction:row;
     justify-content: space-around;
@@ -120,10 +121,10 @@ nav .planets .stars .three {
 
 
 
-nav .planets .stars .one .planet-content {
+main .planets .stars .one .planet-content {
     position: relative;
 }
-nav .planets .stars .one .text-overlay {
+main .planets .stars .one .text-overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -137,29 +138,29 @@ nav .planets .stars .one .text-overlay {
     transition: opacity 0.3s ease;
     border-radius: 10%;
 }
-nav .planets .stars .one .mer:hover .text-overlay {
+main .planets .stars .one .mer:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .one .ven:hover .text-overlay {
+main .planets .stars .one .ven:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .one .earth:hover .text-overlay {
+main .planets .stars .one .earth:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .one p {
+main .planets .stars .one p {
     color: white;
     margin: 5px;
     text-align: center;
 }
 
 
-nav .planets .stars .two .planet-content {
+main .planets .stars .two .planet-content {
     position: relative;
 }
-nav .planets .stars .two .text-overlay {
+main .planets .stars .two .text-overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -173,19 +174,19 @@ nav .planets .stars .two .text-overlay {
     transition: opacity 0.3s ease;
     border-radius: 10%;
 }
-nav .planets .stars .two .mars:hover .text-overlay {
+main .planets .stars .two .mars:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .two .yup:hover .text-overlay {
+main .planets .stars .two .yup:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .two .sat:hover .text-overlay {
+main .planets .stars .two .sat:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .two p {
+main .planets .stars .two p {
     color: white;
     margin: 5px;
     text-align: center;
@@ -193,10 +194,10 @@ nav .planets .stars .two p {
 
 
 
-nav .planets .stars .three .planet-content {
+main .planets .stars .three .planet-content {
     position: relative;
 }
-nav .planets .stars .three .text-overlay {
+main .planets .stars .three .text-overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -210,16 +211,22 @@ nav .planets .stars .three .text-overlay {
     transition: opacity 0.3s ease;
     border-radius: 10%;
 }
-nav .planets .stars .three .uran:hover .text-overlay {
+main .planets .stars .three .uran:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .three .nep:hover .text-overlay {
+main .planets .stars .three .nep:hover .text-overlay {
     opacity: 1;
     border: 1px solid var(--golden-color);
 }
-nav .planets .stars .three p {
+main .planets .stars .three p {
     color: white;
     margin: 5px;
     text-align: center;
+}
+
+article table {
+color: var(--light-color);
+background-color: var(--lightdark-color);
+width: 100%;
 }
