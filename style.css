@@ -81,7 +81,8 @@ nav .planets #acquaintance{
     text-align: center;
     padding: 30px;
     margin: 0px 150px;
-    border: 1px solid black;
+    border: 2px solid var(--golden-color);
+    border-radius: 30%;
     margin-bottom: 70px;
 }
 
