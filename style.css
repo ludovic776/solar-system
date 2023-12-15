@@ -1,6 +1,6 @@
 :root{
     --dark-color: black;
-    --light-color:white;
+    --light-color:rgb(233, 218, 218);
     --golden-color:rgb(255, 187, 0);
     --lightdark-color:rgb(43, 40, 40);
     --purple-color:rgb(140, 0, 255);
@@ -229,4 +229,42 @@ article table {
 color: var(--light-color);
 background-color: var(--lightdark-color);
 width: 100%;
+border: var(--golden-color);
+text-align: center;
+padding-bottom: 20px;
+}
+article table #tabplan{
+    height: 40px;   
+}
+article table .parapla{
+    height: 30px;
+}
+
+
+aside{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+aside p{
+    color: var(--light-color);
+    text-align: right;
+    margin-left: 330px;
+    padding-top: 100px;
+}
+aside img{
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+
+aside button a{
+    background-color: var(--purple-color);
+    color: var(--golden-color);
+    border: 1px solid var(--light-color);
+    font-size: 15px;
+    padding: 10px 15px;
+}
+aside button {
+float: right;
+margin-top: 15px;
 }
