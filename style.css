@@ -11,6 +11,7 @@
 }
 body{
     background-color: var(--dark-color);
+    font-family: 'Afacad', sans-serif;
 }
 
 
@@ -232,6 +233,8 @@ width: 100%;
 border: var(--golden-color);
 text-align: center;
 padding-bottom: 20px;
+padding-left: 10px;
+padding-right: 10px;
 }
 article table #tabplan{
     height: 40px;   
@@ -250,21 +253,69 @@ aside p{
     text-align: right;
     margin-left: 330px;
     padding-top: 100px;
+    font-size: 18px;
+    padding-bottom: 0px;
+    height: 300px;
 }
 aside img{
     max-width: 100%;
     height: auto;
     float: left;
 }
-
-aside button a{
+aside .button {
     background-color: var(--purple-color);
     color: var(--golden-color);
     border: 1px solid var(--light-color);
     font-size: 15px;
-    padding: 10px 15px;
+    padding: 10px 30px;
+    float: right;
+    margin-top: 15px;
+    display: grid;
+    grid-row:1;
 }
-aside button {
-float: right;
-margin-top: 15px;
+
+
+
+.forms{
+    background-color: var(--lightdark-color);
+}
+.forms form{
+    clear: both;
+    color: var(--light-color);
+    text-align: center;
+    font-size: 17px;
+}
+.forms form p{
+    display: inline-block;
+}
+.forms form .yes{
+    margin-left: 0px;
+    margin: 5px 0px;
+}
+.forms form #name{
+    margin: 10px 0px;
+}
+.forms form #em{
+    margin: 10px 0px;
+}
+.forms form legend{
+    font-size: 20px;
+    color: var(--golden-color);
+}
+.forms form button{
+    border-radius: 20%;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: var(--golden-color);
+    color: var(--dark-color);
+}
+.forms form #textn{
+    width: 150px;
+}
+.forms form #texte{
+    width: 180px;
+}
+.forms form #textnom{
+    width: 110px;
 }
