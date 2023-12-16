@@ -247,6 +247,7 @@ article table .parapla{
 aside{
     margin-right: 20px;
     margin-top: 20px;
+    height: 380px;
 }
 aside p{
     color: var(--light-color);
@@ -255,7 +256,7 @@ aside p{
     padding-top: 100px;
     font-size: 18px;
     padding-bottom: 0px;
-    height: 300px;
+    height: 200px;
 }
 aside img{
     max-width: 100%;
@@ -272,50 +273,77 @@ aside .button {
     margin-top: 15px;
     display: grid;
     grid-row:1;
+    text-decoration: none;
 }
 
 
 
-.forms{
+.formscont{
     background-color: var(--lightdark-color);
 }
-.forms form{
+.formscont form{
     clear: both;
     color: var(--light-color);
     text-align: center;
     font-size: 17px;
+    margin-left: 10px;
+    padding-top: 30px;
 }
-.forms form p{
+.formscont form p{
     display: inline-block;
 }
-.forms form .yes{
-    margin-left: 0px;
-    margin: 5px 0px;
+.formscont form .yesorno{
+    margin: 5px;
 }
-.forms form #name{
+.formscont form #name{
     margin: 10px 0px;
 }
-.forms form #em{
+.formscont form #em{
     margin: 10px 0px;
 }
-.forms form legend{
+.formscont form legend{
     font-size: 20px;
     color: var(--golden-color);
 }
-.forms form button{
+.formscont form button{
     border-radius: 20%;
     font-size: 15px;
     padding: 5px 10px;
     margin-top: 10px;
     background-color: var(--golden-color);
     color: var(--dark-color);
+    margin-bottom: 30px;
 }
-.forms form #textn{
+.formscont form #textn{
     width: 150px;
 }
-.forms form #texte{
+.formscont form #texte{
     width: 180px;
 }
-.forms form #textnom{
+.formscont form #textnom{
     width: 110px;
+}
+
+
+footer .contact{
+    color: rgb(15, 61, 100);
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+footer .contact .icon{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+footer .contact .icon a {
+    display: flex;
+    align-items: center;
+}
+footer .contact .icon p{
+    color: var(--dark-color);
+    font-size: 20px;
+    margin-left: 15px;
 }
