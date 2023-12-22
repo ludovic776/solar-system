@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar-System</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Внешняя таблица стилей -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -14,14 +15,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet">
+    
+    <style>
+        header .cosmo {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+    <!-- Встроенная таблица стилей -->
 </head>
 <body>
     <header>
         <div class="cosmo">
             <img id="cosmo" src="https://img.freepik.com/free-photo/low-angle-shot-of-the-mesmerizing-starry-sky_181624-27925.jpg?w=740&t=st=1701594677~exp=1701595277~hmac=dfa5832bf72789729e9f063d057778347318c34855ea7da09a1b5d0759e07a5f" alt="cosmos">
             <img id="purple" src="https://pics.livejournal.com/upryamka/pic/0015bx4r" alt="purple">
-            <p id="welcom">Добро пожаловать в бескрайний космос.</p>
-            <p id="intro">Здесь, среди звездных просторов, открываются перед вами тайны вселенной. Наблюдайте за мерцающими звездами, погружайтесь в загадочные галактики и чувствуйте величие космического бескрая.</p>
+            <p style="position: absolute;" id="welcom">Добро пожаловать в бескрайний космос.</p>
+            <p style="position: absolute;" id="intro">Здесь, среди звездных просторов, открываются перед вами тайны вселенной. Наблюдайте за мерцающими звездами, погружайтесь в загадочные галактики и чувствуйте величие космического бескрая.</p>
+            <!-- Добавлена внутренняя таблица стилей -->
         </div>
     </header>
     <section>
@@ -118,86 +129,197 @@
         </div>
     </main>
     <article>
-        <table border="1">
-            <tr id="tabplan">
-                <th></th>
-              <th>Меркурий</th>
-              <th>Венера </th>
-              <th>Земля</th>
-              <th>Марс</th>
-              <th>Юпитер</th>
-              <th>Сатурн</th>
-              <th>Уран</th>
-              <th>Нептун</th>
-            </tr>
-            <tr class="parapla">
-                <th>Диаметр</th>
-                <td>4,880 км</td>
-                <td>12,104 км </td>
-                <td>12,742 км</td>
-                <td>6,779 км</td>
-                <td>139,820 км</td>
-                <td>116,460 км</td>
-                <td>50,724 км</td>
-                <td>49,244 км</td>
-            </tr>
-            <tr class="parapla">
-                <th>Орбитальный период</th>
-                <td> 88 земных суток</td>
-                <td>225 земных суток</td>
-                <td> 365.25 земных суток</td>
-                <td> 687 земных суток</td>
-                <td>11.9 земных лет</td>
-                <td>29.5 земных лет</td>
-                <td>84 земных года</td>
-                <td>164.8 земных года</td>
-            </tr>
-            <tr class="parapla">
-                <th>Расстояние от Солнца</th>
-                <td>57.91 млн км</td>
-                <td>108.2 млн км </td>
-                <td>149.6 млн км</td>
-                <td>227.9 млн км</td>
-                <td> 778.3 млн км</td>
-                <td>1.43 млрд км</td>
-                <td>2.87 млрд км</td>
-                <td>4.5 млрд км</td>
-            </tr>
-            <tr class="parapla">
-                <th>Наклонение орбиты</th>
-                <td>7 градусов</td>
-                <td>3.39 градусов </td>
-                <td>0 градусов</td>
-                <td>1.85 градусов</td>
-                <td>1.31 градусов</td>
-                <td>2.49 градусов</td>
-                <td>0.77 градусов</td>
-                <td>1.77 градусов</td>
-            </tr>
-            <tr class="parapla">
-                <th>Период вращения</th>
-                <td>58.65 земных суток</td>
-                <td>116 земных суток </td>
-                <td>24 часа</td>
-                <td>24.6 земных суток</td>
-                <td>9.9 земных часов</td>
-                <td>10.7 земных часов</td>
-                <td>17.2 земных часа</td>
-                <td>16.1 земных часа</td>
-            </tr>
-            <tr class="parapla">
-                <th>Спутников </th>
-                <td>нет</td>
-                <td>нет </td>
-                <td>1</td>
-                <td>2</td>
-                <td>79</td>
-                <td>83</td>
-                <td>27</td>
-                <td>14</td>
-            </tr>
-          </table>
+        <div class="tableosn">
+            <table class="one" border="1">
+                <tr id="tabplan">
+                    <th></th>
+                <th>Меркурий</th>
+                <th>Венера </th>
+                <th>Земля</th>
+                <th>Марс</th>
+                <th>Юпитер</th>
+                <th>Сатурн</th>
+                <th>Уран</th>
+                <th>Нептун</th>
+                </tr>
+                <tr class="parapla">
+                    <th>Диаметр</th>
+                    <td>4,880 км</td>
+                    <td>12,104 км </td>
+                    <td>12,742 км</td>
+                    <td>6,779 км</td>
+                    <td>139,820 км</td>
+                    <td>116,460 км</td>
+                    <td>50,724 км</td>
+                    <td>49,244 км</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Орбитальный период</th>
+                    <td> 88 земных суток</td>
+                    <td>225 земных суток</td>
+                    <td> 365.25 земных суток</td>
+                    <td> 687 земных суток</td>
+                    <td>11.9 земных лет</td>
+                    <td>29.5 земных лет</td>
+                    <td>84 земных года</td>
+                    <td>164.8 земных года</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Расстояние от Солнца</th>
+                    <td>57.91 млн км</td>
+                    <td>108.2 млн км </td>
+                    <td>149.6 млн км</td>
+                    <td>227.9 млн км</td>
+                    <td> 778.3 млн км</td>
+                    <td>1.43 млрд км</td>
+                    <td>2.87 млрд км</td>
+                    <td>4.5 млрд км</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Наклонение орбиты</th>
+                    <td>7 градусов</td>
+                    <td>3.39 градусов </td>
+                    <td>0 градусов</td>
+                    <td>1.85 градусов</td>
+                    <td>1.31 градусов</td>
+                    <td>2.49 градусов</td>
+                    <td>0.77 градусов</td>
+                    <td>1.77 градусов</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Период вращения</th>
+                    <td>58.65 земных суток</td>
+                    <td>116 земных суток </td>
+                    <td>24 часа</td>
+                    <td>24.6 земных суток</td>
+                    <td>9.9 земных часов</td>
+                    <td>10.7 земных часов</td>
+                    <td>17.2 земных часа</td>
+                    <td>16.1 земных часа</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Спутников </th>
+                    <td>нет</td>
+                    <td>нет </td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>79</td>
+                    <td>83</td>
+                    <td>27</td>
+                    <td>14</td>
+                </tr>
+            </table>
+        </div>
     </article>
+    <section class="media">
+        <div class="tablemediascreen">
+            <table class="tablemedia" border="1">
+                <tr id="tabplan">
+                    <th></th>
+                    <th>Меркурий</th>
+                    <th>Венера </th>
+                    <th>Земля</th>
+                    <th>Марс</th>
+                </tr>
+                <tr class="parapla">
+                    <th>Диаметр</th>
+                    <td>4,880 км</td>
+                    <td>12,104 км </td>
+                    <td>12,742 км</td>
+                    <td>6,779 км</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Орбитальный период</th>
+                    <td> 88 земных суток</td>
+                    <td>225 земных суток</td>
+                    <td> 365.25 земных суток</td>
+                    <td> 687 земных суток</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Расстояние от Солнца</th>
+                    <td>57.91 млн км</td>
+                    <td>108.2 млн км </td>
+                    <td>149.6 млн км</td>
+                    <td>227.9 млн км</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Наклонение орбиты</th>
+                    <td>7 градусов</td>
+                    <td>3.39 градусов </td>
+                    <td>0 градусов</td>
+                    <td>1.85 градусов</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Период вращения</th>
+                    <td>58.65 земных суток</td>
+                    <td>116 земных суток </td>
+                    <td>24 часа</td>
+                    <td>24.6 земных суток</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Спутников </th>
+                    <td>нет</td>
+                    <td>нет </td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </section>
+        <section class="mediatwo">
+            <div class="tablemediascreentwo">
+            <table class="tablemediatwo" border="1">
+                <tr id="tabplan">
+                    <th></th>
+                    <th>Юпитер</th>
+                    <th>Сатурн</th>
+                    <th>Уран</th>
+                    <th>Нептун</th>
+                </tr>
+                <tr class="parapla">
+                    <th>Диаметр</th>
+                    <td>139,820 км</td>
+                    <td>116,460 км</td>
+                    <td>50,724 км</td>
+                    <td>49,244 км</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Орбитальный период</th>
+                    <td>11.9 земных лет</td>
+                    <td>29.5 земных лет</td>
+                    <td>84 земных года</td>
+                    <td>164.8 земных года</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Расстояние от Солнца</th>
+                    <td> 778.3 млн км</td>
+                    <td>1.43 млрд км</td>
+                    <td>2.87 млрд км</td>
+                    <td>4.5 млрд км</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Наклонение орбиты</th>
+                    <td>1.31 градусов</td>
+                    <td>2.49 градусов</td>
+                    <td>0.77 градусов</td>
+                    <td>1.77 градусов</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Период вращения</th>
+                    <td>9.9 земных часов</td>
+                    <td>10.7 земных часов</td>
+                    <td>17.2 земных часа</td>
+                    <td>16.1 земных часа</td>
+                </tr>
+                <tr class="parapla">
+                    <th>Спутников </th>
+                    <td>79</td>
+                    <td>83</td>
+                    <td>27</td>
+                    <td>14</td>
+                </tr>
+            </table> 
+        </div>
+    </section>
     <aside>
         <img src="https://znanierussia.ru/articles/wmedia/wikipedia/commons/thumb/e/e4/Moon_merged_small.jpg/300px-Moon_merged_small.jpg" alt="moon">
         <p>Луна является самым видимым и ярким объектов на небе, она привлекает внимание человека с древних времён.Луна, единственный естественный спутник Земли и ближайшее к нам небесное тело.Второй по яркости объект на земном небосводе после Солнца и пятый по величине естественный спутник планеты Солнечной системы. Среднее расстояние между центрами Земли и Луны — 384 467 км.В 1969 году человек впервые высадился на Луну, однако нахождения человечества на Луне длилось не долго, в 1972 году состоялась последняя на текущий момент авсадка людей на спутник. Луна — единственное небесное тело, на котором побывал человек; и первое небесное тело, образцы которого были доставлены на Землю</p>

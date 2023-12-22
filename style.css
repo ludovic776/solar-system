@@ -15,11 +15,6 @@ body{
 }
 
 
-header .cosmo {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
 header .cosmo #cosmo {
     width: 100%;
     height: 100%;
@@ -33,9 +28,6 @@ header .cosmo #purple {
     height: 500px;
     opacity: 0.8;
 
-}
-header .cosmo p {
-    position: absolute;
 }
 header .cosmo #welcom{
     font-family: 'Lora', serif;
@@ -226,13 +218,14 @@ main .planets .stars .three p {
     margin: 5px;
     text-align: center;
 }
-
 article table {
-color: var(--light-color);
-background-color: var(--lightdark-color);
+    color: var(--light-color);
+    background-color: var(--lightdark-color);
+    border: var(--golden-color);
+    text-align: center;
+}
+article .tableosn .one {
 width: 100%;
-border: var(--golden-color);
-text-align: center;
 padding-bottom: 20px;
 padding-left: 10px;
 padding-right: 10px;
@@ -243,6 +236,21 @@ article table #tabplan{
 article table .parapla{
     height: 30px;
 }
+.media .tablemediascreen{
+    position: absolute;
+    top: -1000px;
+    color: var(--light-color);
+    background-color: var(--lightdark-color);
+    text-align: center;
+}
+.mediatwo .tablemediascreentwo{
+    position: absolute;
+    top: -1000px;
+    color: var(--light-color);
+    background-color: var(--lightdark-color);
+    text-align: center;
+}
+
 
 
 aside{
@@ -352,11 +360,11 @@ footer .contact .icon p{
 
 
 
+
 @media screen and (min-width:0px) and (max-width:768px){
     header .cosmo #purple {
-        width: 300px;
-        position: absolute;
-        margin-left: -90%;
+        width: 250px;
+        text-align: center;
         height: 800px;
     }
     header .cosmo #cosmo {
@@ -364,33 +372,44 @@ footer .contact .icon p{
         height: 950px;
     }
     header .cosmo #welcom{
-        margin-left: 0px;
         font-size: 28px;
         text-align: center;
+        position: absolute;
+        right: 25%;
+        top: 20%;
     }
     header .cosmo #intro{
-        margin-left: 100px;
-        top: 280px;
+        margin-top: 20px;
+        margin-left:34%;
+        top: 50%;
+        font-size: 22px;
     }
 
     section .solar-system{
         height: 300px;
-        padding-top:300px ;
+        padding-top:110% ;
     }
     section .solar-system #welsol{
         font-size: 18px;
         text-align: right;
-        top: 1100px;
+        position: relative;
+        top: -20%;
         margin-left: 20%;
         margin-right: 10px;
     }
     section .solar-system #solsys{
         height: 200px;
-        width: 400px;
+        width: 375px;
+    }
+    main .planets{
+        margin-bottom: -50px;
     }
     main .planets #acquaintance{
         margin: 10px 20px;
         margin-bottom: 40px;
+    }
+    main .planets .stars .planet-content{
+        margin-bottom: 10px;
     }
     main .planets .stars .one {
         display: flex;
@@ -400,21 +419,28 @@ footer .contact .icon p{
     main .planets .stars .two {
         display: flex;
         flex-direction:column;
-        margin-bottom: 20px;
-        margin-bottom: 1px;
+        margin-bottom: 0px;
     }
     main .planets .stars .three {
         display: flex;
         flex-direction:column;
         margin-bottom: 20px;
     }
-    article table #tabplan{
-        height: 80px;
-        width: 5px;   
+    article table {
+        position: absolute;
+        top: -1000px;
     }
-    article table .parapla{
-        height: 100px;
-        width: 5px; 
+    
+    .media .tablemediascreen{
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .mediatwo .tablemediascreentwo{
+        position: relative;
+        top: 0;
+        font-size: 14px;
     }
     aside{
         margin-right: 10px;
@@ -431,7 +457,121 @@ footer .contact .icon p{
     aside .button {
         font-size: 15px;
         padding: 10px 30px;
-        margin-top: 480px;
+        position: relative;
+        top: 50%;
+        text-decoration: none;
+    }
+    footer .contact .icon{
+        flex-direction: column;
+    }
+    footer .contact .icon p{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media screen and (min-width:500px) and (max-width:768px){
+    header .cosmo #purple {
+        width: 70%;
+        text-align: center;
+        height: 500px;
+    }
+    header .cosmo #cosmo {
+        width: 100%;
+        height: 100vh;
+    }
+    header .cosmo #welcom{
+        font-size: 28px;
+        text-align: center;
+        position: absolute;
+        right: 20%;
+        top: 20%;
+        margin-left: 25%;
+    }
+    header .cosmo #intro{
+        margin-top: 0px;
+        margin-left:20%;
+        top: 50%;
+        font-size: 22px;
+        margin-right: 10%;
+    }
+
+    section .solar-system{
+        height: 300px;
+        padding-top:10% ;
+    }
+    section .solar-system #welsol{
+        font-size: 18px;
+        text-align: right;
+        position: relative;
+        top: -20%;
+        margin-left: 20%;
+        margin-right: 10px;
+    }
+    section .solar-system #solsys{
+        height: 200px;
+        width: 375px;
+    }
+    main .planets{
+        margin-bottom: -50px;
+    }
+    main .planets #acquaintance{
+        margin: 10px 20px;
+        margin-bottom: 40px;
+    }
+    main .planets .stars .planet-content{
+        margin-bottom: 10px;
+    }
+    main .planets .stars .one {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 1px;
+    }
+    main .planets .stars .two {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 0px;
+    }
+    main .planets .stars .three {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 20px;
+    }
+    article table {
+        position: absolute;
+        top: -1000px;
+    }
+    
+    .media .tablemediascreen{
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+        font-size: 17px;
+
+    }
+    .mediatwo .tablemediascreentwo{
+        position: relative;
+        top: 0;
+        font-size: 17px;
+    }
+    aside{
+        margin-right: 10px;
+        margin-top: 20px;
+        height: 1050px;
+    }
+    aside p{
+        margin-left: 10px;
+        text-align: left;
+    }
+    aside img{
+        width: 100%;
+    }
+    aside .button {
+        font-size: 15px;
+        padding: 10px 30px;
+        position: relative;
+        top: 22%;
         text-decoration: none;
     }
     footer .contact .icon{
